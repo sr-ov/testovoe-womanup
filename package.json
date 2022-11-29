@@ -1,0 +1,39 @@
+{
+	"name": "testovoe-womanup",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.0",
+		"axios": "^1.2.0",
+		"clsx": "^1.2.1",
+		"firebase": "^9.13.0",
+		"react": "^18.2.0",
+		"react-datetime-picker": "^4.1.1",
+		"react-dom": "^18.2.0",
+		"react-firebase-hooks": "^5.1.1",
+		"react-html-props": "^1.0.33",
+		"react-redux": "^8.0.5",
+		"react-redux-actions-hook": "^1.1.18",
+		"react-textarea-autosize": "^8.4.0",
+		"react-use": "^17.4.0",
+		"vite-plugin-svgr": "^2.2.2"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.9",
+		"@types/react": "^18.0.24",
+		"@types/react-datetime-picker": "^3.4.1",
+		"@types/react-dom": "^18.0.8",
+		"@vitejs/plugin-react": "^2.2.0",
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.19",
+		"tailwindcss": "^3.2.4",
+		"typescript": "^4.6.4",
+		"vite": "^3.2.3"
+	}
+}
