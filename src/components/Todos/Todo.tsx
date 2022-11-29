@@ -1,7 +1,7 @@
 import { FC, MouseEvent, useCallback } from 'react'
 import cn from 'clsx'
 
-import { Checkbox } from '..'
+import { Checkbox, AppError } from '..'
 import { ITodo, ITodoBase } from '../../types'
 import { useActions, useCRUDTodos } from '../../hooks'
 import TodoDate from './TodoDate'
@@ -23,7 +23,7 @@ const Todo: FC<TodoProps> = ({ done, date, id, title }) => {
 	}, [done])
 
 	if (error) {
-		return <>Произошла ошибка!!!</>
+		return <AppError />
 	}
 
 	return (

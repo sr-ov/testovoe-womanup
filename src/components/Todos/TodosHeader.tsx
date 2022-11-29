@@ -1,6 +1,6 @@
 import { FC, KeyboardEvent } from 'react'
 
-import { Input } from '..'
+import { Input, AppError } from '..'
 import { useCRUDTodos, useTextField } from '../../hooks'
 import { ITodoBase } from '../../types'
 
@@ -10,15 +10,15 @@ const TodosHeader: FC<TodosHeaderProps> = () => {
 	const { addTodo, error } = useCRUDTodos()
 	const { value, onChange, setEmptyValue } = useTextField('')
 
-	if (error) {
-		return <>Произошла ошибка!!!</>
-	}
-
 	const onAddTodo = (e: KeyboardEvent<HTMLInputElement>) => {
 		if (e.key !== 'Enter' || !value) return
 
 		addTodo({ title: value } as ITodoBase)
 		setEmptyValue()
+	}
+
+	if (error) {
+		return <AppError />
 	}
 
 	return (

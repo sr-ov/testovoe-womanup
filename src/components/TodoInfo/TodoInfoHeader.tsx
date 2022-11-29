@@ -10,7 +10,7 @@ const TodoInfoHeader: FC<TodoInfoHeaderProps> = () => {
 
 	return (
 		<header className="ring-prim ring-2">
-			<button className="h-[60px] p-4  block w-full" onClick={toggleIsTraslate}>
+			<button className="h-[60px] p-4 block w-full" onClick={toggleIsTraslate}>
 				<IconBack height={30} />
 			</button>
 		</header>
